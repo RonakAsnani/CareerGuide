@@ -14,6 +14,9 @@ router.get('/sign-in',usersController.signIn);
 
 router.post('/create',usersController.create);
 
+router.post('/verify-mentor',usersController.verifyMentor);
+
+router.post('/remove-interest',usersController.removeInterest);
 // use passport as a middleware to authenticate
 router.post('/create-session',passport.authenticate(
     'local',

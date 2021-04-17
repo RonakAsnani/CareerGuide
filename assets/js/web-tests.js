@@ -85,6 +85,7 @@ $(document).ready(function ()
 	// On clicking next, display the next question
     $(this).find(".nextButton").on("click", function () 
 	{
+		c= 185;
         if (!quizOver) 
 		{
 			

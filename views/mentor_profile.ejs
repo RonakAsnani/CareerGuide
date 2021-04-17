@@ -24,15 +24,31 @@
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
           <div id="about" class="icon-box">
             <div class="icon"><i class="ri-stack-line"></i></div>
-            <h4 class="title"><a href="/tests/web-development">Web development</a></h4>
-            <p class="description">Knowledge of any one stack is neccessary</p>
+            <% if(user.verified == "true") {%>
+              <p class="description">Congratulations, you have become a mentor</p>
+              <h4 class="title"><a href="">Explore more </a></h4>
+            <%} else if(user.interest == "web-development") {%>
+              <h4 class="title"><a href="/tests/web-development"><%=user.interest %></a></h4>
+            <%}else if(user.interest == ""){%>
+              <h4 class="title"><a href="/tests/web-development"><%=user.interest %></a></h4>
+            <%}else if(user.interest == ""){%>
+              <h4 class="title"><a href="/tests/web-development"><%=user.interest %></a></h4>
+            <%}else if(user.interest == ""){%>
+              <h4 class="title"><a href="/tests/web-development"><%=user.interest %></a></h4> 
+            <%}else if(user.interest == ""){%>
+              <h4 class="title"><a href="/tests/web-development"><%=user.interest %></a></h4>           
+            <%} else{%>
+              <p class="description">Sorry, you have failed the test and are now not eligible to be a mentor</p>
+              <%}%>
+           
+            
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
           <div class="icon-box">
             <div class="icon"><i class="ri-palette-line"></i></div>
-            <h4 class="title"><a href="">App Development</a></h4>
+            <h4 class="title"><a href="/users/sign-out">Sign Out</a></h4>
             <p class="description">Duis aute irure dolor in reprehenderit in</p>
           </div>
         </div>
@@ -57,7 +73,7 @@
     </div>
   </section>
 
-<a href="/users/sign-out">Sign Out</a>
+
 
 
 <script src="/js/mentor-profile.js"></script>
