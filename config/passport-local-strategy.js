@@ -37,7 +37,7 @@ passport.checkAuthentication = function(req,res,next){
         return next();
     }
 
-    return res.redirect('');
+    return res.redirect('/users/sign-in');
 }
 
 passport.setAuthenticatedUser = function(req,res,next){
@@ -46,6 +46,8 @@ passport.setAuthenticatedUser = function(req,res,next){
     }
     next();
 }
+
+
 
 module.exports = passport;
 

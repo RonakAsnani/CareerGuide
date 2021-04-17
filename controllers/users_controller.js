@@ -5,11 +5,14 @@ module.exports.profile = function(req,res){
         title: "User Profile"
     })
 }
+module.exports.mentorProfile = function(req,res){
+    return res.render('mentor_profile',{
+        title: "Mentor Profile"
+    })
+}
 
 module.exports.signUp = function(req,res){
-    if(req.isAuthenticated()){
-        return  res.redirect('/users/profile');
-    }
+
 
     return res.render('sign-up',{
         title: "CareerGuide | Sign Up"
@@ -19,9 +22,16 @@ module.exports.signUp = function(req,res){
 module.exports.signIn = function(req,res){
 
     if(req.isAuthenticated()){
-        return res.redirect('/users/profile');
+       // console.log(res.locals);
+        if(res.locals.user.field == "student"){
+            return res.redirect('/users/profile');
+        }
+        if(res.locals.user.field == "mentor"){
+            return res.redirect('/users/mentor_profile');
+        }
+        
     }
-    return res.render("sign-in",{
+    return res.render('sign-in',{
         title: "CareerGuide | Sign In"
     })
 }
@@ -58,7 +68,17 @@ module.exports.create = function(req,res){
 
 
 module.exports.createSession = function(req,res){
-    return res.redirect('/users/profile');
+    User.findOne({email:req.body.email},function(err,user){
+        if(user.field == "student"){
+            return res.redirect('/users/profile');
+        }
+        if(user.field == "mentor"){
+            return res.redirect('/users/mentor_profile');
+        }
+    })
+    
+    //return res.redirect('/users/sign-in');
+    
 }
 
 module.exports.destroySession = function(req,res){
