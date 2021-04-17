@@ -15,10 +15,15 @@ const userSchema = new mongoose.Schema({
         required: true
 
     },
-
     field:{
         type: String,
         required: true
+    },
+    interest:{
+
+    },
+    verified:{
+        type: Boolean
     }
 },{
     timestamps: true
