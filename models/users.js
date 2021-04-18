@@ -19,7 +19,10 @@ const userSchema = new mongoose.Schema({
     field:{
         type: String,
         required: true
-    }
+    },
+    interest:{
+        type:String
+    },
 },{
     timestamps: true
 });
