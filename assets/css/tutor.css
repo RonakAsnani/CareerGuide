@@ -1,0 +1,13 @@
+#mein{
+    display: flex;
+    flex-direction: column;
+}
+#sel{
+display: flex;
+}
+#coentent{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

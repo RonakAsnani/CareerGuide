@@ -1,8 +1,10 @@
 const User = require('../models/users');
 
 module.exports.profile = function(req,res){
-    return res.render('profile',{
-        title: "User Profile"
+    return res.render('dashboard/dashboard',{
+        title: "User Profile",
+        name:"Jakass coder",
+        field:"Rapchik coder"
     })
 }
 module.exports.mentorProfile = function(req,res){
@@ -11,10 +13,27 @@ module.exports.mentorProfile = function(req,res){
     })
 }
 
+module.exports.tutor=function(req,res){
+    return res.render('dashboard/mentor1',{
+        title:"mentorsss",
+        name:"Jakass coder",
+        field:"Rapchik coder"
+        
+    })
+}
+module.exports.detail=function(req,res){
+    return res.render('dashboard/student',{
+        title:"mentorsss",
+        name:"Jakass coder",
+        field:"Rapchik coder"
+        
+    })
+}
+
 module.exports.signUp = function(req,res){
 
 
-    return res.render('sign-up',{
+    return res.render('signup_copy',{
         title: "CareerGuide | Sign Up"
     })
 };
@@ -36,7 +55,7 @@ module.exports.signIn = function(req,res){
     })
 }
 
-// get sign up data
+// // get sign up data
 module.exports.create = function(req,res){
     if(req.body.password != req.body.confirm_password){
         return res.redirect('back');
@@ -58,7 +77,10 @@ module.exports.create = function(req,res){
         }else{
             return res.redirect('back');
         }
+
+    
     })
+    //console.log(req.body);
 
 }
 

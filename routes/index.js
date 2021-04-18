@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const homeControl = require('../controllers/home_controller');
 
+
 router.get('/',homeControl.home);
 
 const aboutController = require('../controllers/about_controller');
@@ -22,5 +23,6 @@ const mentorController = require('../controllers/mentor-controller');
 
 router.get('/confirm-mentor',mentorController.mentorConfirm);
 router.get('/mentor-fail',mentorController.mentorFail);
+
 
 module.exports = router;
