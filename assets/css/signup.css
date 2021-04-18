@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+#top{
+    position: relative;
+    display:flex ;
+    flex-direction: row;
+    /* border: 2px solid green; */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#bottom{
+    /* border: 2px solid yellow; */
+    padding: 20px;
+    margin: 50px;
+}
+
+#btttn-1,#btttn-2{
+    position: absolute;
+    
+    width : 50%;
+}
+#btttn-1{
+    left:0;
+}
+#btttn-2{
+    right:0;
+}

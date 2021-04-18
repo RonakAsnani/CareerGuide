@@ -13,9 +13,12 @@ const { pass } = require("./config/mongoose");
 const { Passport } = require("passport");
 const MongoStore = require('connect-mongo')(session);
 
-
-
 app.use(express.urlencoded());
+// app.use(function(req,res,next){
+//     console.log(req.body);
+//     next();
+// })
+
 app.use(cookieParser());
 
 app.use(express.static('./assets'));
