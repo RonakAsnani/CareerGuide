@@ -73,7 +73,9 @@ student.addEventListener('click', function () {
                     <input class="form-check-input" type="checkbox"  id="gridRadios1" value="option1"
                         >
                     <label class="form-check-label" for="gridRadios1">
+
                         Coding
+
                     </label>
                 </div>
                 <div class="form-check">
@@ -113,7 +115,9 @@ margin-top: 25px;">
 })
 
 
+
 // mentor
+
 mentor.addEventListener('click', function () {
     doc.innerHTML = `
 
@@ -172,6 +176,7 @@ mentor.addEventListener('click', function () {
             <legend class="col-form-label col-sm-2 pt-0">Expertise</legend>
             <div class="col-sm-10">
                 <div class="form-check">
+
                     <input class="form-check-input" type="radio" name="interest" required id="gridRadios1" value="web-development"
                         checked>
                     <label class="form-check-label" for="gridRadios1">
@@ -216,14 +221,18 @@ mentor.addEventListener('click', function () {
                     <input class="form-check-input" type="radio" name="interest" required id="gridRadios3" value="finance"
                         >
                     <label class="form-check-label" for="gridRadios3">
+
                         Finance
                     </label>
                 </div>
                 <div class="form-check ">
+
                     <input class="form-check-input" type="radio" name="interest" required id="gridRadios3" value="music"
                         >
                     <label class="form-check-label" for="gridRadios3">
                        Music
+
+
                     </label>
                 </div>
             </div>
