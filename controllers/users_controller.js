@@ -29,6 +29,16 @@ module.exports.detail=function(req,res){
         
     })
 }
+module.exports.testRules = function(req,res){
+    return res.render('test-rules',{
+        title: "rules"
+    })
+}
+module.exports.showInfo = function(req,res){
+    return res.render('mentor-info',{
+        title: "info"
+    })
+}
 
 module.exports.signUp = function(req,res){
 
@@ -54,6 +64,8 @@ module.exports.signIn = function(req,res){
         title: "CareerGuide | Sign In"
     })
 }
+
+
 
 // // get sign up data
 module.exports.create = function(req,res){

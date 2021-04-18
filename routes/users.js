@@ -14,8 +14,10 @@ router.get('/sign-in',usersController.signIn);
 router.get('/tutor',usersController.tutor);
 router.get('/detail',usersController.detail);
 
-
+router.get('/test-rules',usersController.testRules);
 router.post('/create',usersController.create);
+
+router.get('/mentor-info',passport.checkAuthentication,usersController.showInfo);
 
 router.post('/verify-mentor',usersController.verifyMentor);
 

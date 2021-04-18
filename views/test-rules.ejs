@@ -1,0 +1,129 @@
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/tutor.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
+  </head>
+  
+  <div id="maine">
+
+    <div class="vertical-nav bg-white" id="sidebar">
+  
+  
+      
+  
+      <ul class="nav flex-column bg-white mb-0" id="son-1">
+        <li class="nav-item">
+  
+          <a href="/users/mentor_profile" class="nav-link text-dark font-italic bg-light">
+            <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+            Welcome
+          </a>
+  
+        </li>
+        <li class="nav-item">
+  
+          <a href="" class="nav-link text-dark font-italic bg-light">
+            <!-- <i class="fa fa-user-graduate mr-3 text-primary fa-fw"></i> -->
+            <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>
+            Give Test
+          </a>
+  
+        </li>
+        <li class="nav-item">
+  
+          <a href="/users/test-rules" class="nav-link text-dark font-italic bg-light">
+            <!-- <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> -->
+            <i class="fas fa-chalkboard-teacher mr-3 text-primary fa-fw"></i>
+            Test Rules
+          </a>
+  
+        </li>
+        <!-- <li class="nav-item">
+            <button>
+              <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fas fa-calendar-alt mr-3 text-primary fa-fw"></i>
+                Calender
+              </a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button>
+              <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fas fa-inbox mr-3 text-primary fa-fw"></i>
+                Inbox
+              </a>
+            </button>
+          </li> -->
+        <li class="nav-item">
+  
+          <a href="/users/sign-out" class="nav-link text-dark font-italic bg-light">
+            <!-- <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> -->
+            <i class="fas fa-sign-out-alt mr-3 text-primary fa-fw"></i>
+            Logout
+          </a>
+  
+        </li>
+      </ul>
+  
+      
+      <div class="py-4 px-3 mb-4 bg-light" id="son-2">
+        <div class="media d-flex align-items-center"><img
+            src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65"
+            class="mr-3 rounded-circle img-thumbnail shadow-sm">
+          <div class="media-body">
+            <h4 class="m-0">
+              <%=user.name%>
+            </h4>
+            <p class="font-weight-light text-muted mb-0">
+              <%=user.field%>
+            </p>
+            <p>Not verified</p>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+    </div>
+    <!-- End vertical navbar -->
+  
+  
+    <!-- Page content holder -->
+    <div class="page-content p-5" id="content">
+      <!-- Toggle button -->
+      <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i
+          class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+  
+      <div id="cottent">
+        <div style="background-color: aliceblue; border-radius: 15px; color: slategray; padding: 30px;" id="info">
+          <h2>Rules for test:</h2>
+          <p>1) Test will be of 30 minutes</p>
+          <p>2) Test will consist of 10 questions</p>
+          <p>3) Questions will be of mcq type</p>
+          <p>4) You have only one attempt </p>
+          <p>5) You need atleast 80% to qualify</p>
+        </div>
+  
+  
+      </div>
+  
+  
+    </div>
+  
+  </div>
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="/js/dashboard.js"></script>
