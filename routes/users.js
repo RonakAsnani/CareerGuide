@@ -17,12 +17,20 @@ router.get('/detail',usersController.detail);
 
 router.post('/create',usersController.create);
 
+router.post('/verify-mentor',usersController.verifyMentor);
+
+router.post('/remove-interest',usersController.removeInterest);
 // use passport as a middleware to authenticate
 router.post('/create-session',passport.authenticate(
     'local',
     {failureRedirect: '/users/sign-in'}
 ),usersController.createSession);
 
+
+
+
 router.get('/sign-out',usersController.destroySession);
+
+
 
 module.exports = router;

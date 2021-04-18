@@ -15,14 +15,19 @@ const userSchema = new mongoose.Schema({
         required: true
 
     },
-
     field:{
         type: String,
         required: true
     },
     interest:{
-        type:String
+        type: String,
+        required: false
     },
+    verified:{
+        type: String,
+        required: false
+    }
+
 },{
     timestamps: true
 });

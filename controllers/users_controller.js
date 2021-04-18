@@ -84,7 +84,32 @@ module.exports.create = function(req,res){
 
 }
 
+module.exports.verifyMentor = function(req,res){
+    User.findOneAndUpdate({email: res.locals.user.email}, {$set:{verified:"true"}}, {new: true}, (err, doc) => {
+        if (err) {
+            console.log("Something wrong when updating data!");
+        }
+    
+        console.log(doc);
+    });
+    // console.log(res.locals.user);
+    return res.redirect('/users/mentor_profile');
+}
 
+module.exports.removeInterest = function(req,res){
+    //console.log(res.locals.user);
+    // res.locals.user.interest == "none";
+    // console.log(res.locals.user);
+    User.findOneAndUpdate({email: res.locals.user.email}, {$set:{interest:"none"}}, {new: true}, (err, doc) => {
+        if (err) {
+            console.log("Something wrong when updating data!");
+        }
+    
+       // console.log(doc);
+    });
+    // console.log(res.locals.user);
+    return res.redirect('/users/mentor_profile');
+}
 
 
 

@@ -17,7 +17,12 @@ router.get('/articles',articleControl.articles);
 
 router.use('/users',require('./users'));
 
+router.use('/tests',require('./tests'));
 
+const mentorController = require('../controllers/mentor-controller');
+
+router.get('/confirm-mentor',mentorController.mentorConfirm);
+router.get('/mentor-fail',mentorController.mentorFail);
 
 
 module.exports = router;
