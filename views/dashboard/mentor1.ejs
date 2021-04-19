@@ -136,9 +136,13 @@
 
             </div>
             <ul class="list-group list-group-flush">
-          
-              <li class="list-group-item"><%=i.interest%></li>
-              <li class="list-group-item"><%=i.email%></li>
+              
+              <li class="list-group-item"> <%=i.interest%></li>
+              <li class="list-group-item"> <%=i.email%></li>
+              <% if(i.summary) {%>
+        
+                <li class="list-group-item"> <%=i.summary%></li>
+              <%}%>
             </ul>
 
           </div>

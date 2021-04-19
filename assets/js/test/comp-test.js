@@ -1,42 +1,42 @@
 var questions = [{
-    question: "1. What is competitive?",
-    choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
-    correctAnswer: 3
+    question: "1. The complexity of Bubble sort algorithm is",
+    choices: ["O(n)", "O(log n)", "O(n2)", "O(n log n)"],
+    correctAnswer: 1
 }, {
-    question: "2. How to empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
+    question: "2. The data structure required to evaluate a postfix expression is",
+    choices: ["queue", "stack", "array", "linked list"],
     correctAnswer: 2
 }, {
-    question: "3. What function to add an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
+    question: "3. The indirect change of the values of a variable in one module by another module is called",
+    choices: ["internal change", "inter-module change", "side effect", "side-module update"],
     correctAnswer: 1
 }, {
-    question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
-    choices: ["undefined", "0", "prints nothing", "Syntax error"],
-    correctAnswer: 0
-}, {
-    question: "5. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctAnswer: 0
-},{
-	question: "6. Which software company developed JavaScript?",
-    choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
+    question: "4. The process of accessing data stored in a serial access memory is similar to manipulating data on a",
+    choices: ["heap", "queue", "stack", "binary tree"],
     correctAnswer: 1
-},{
-	question: "7. What would be the result of 3+2+'7'?",
-    choices: ["327", "12", "14", "57"],
-    correctAnswer: 3
-},{
-	question: "8. Look at the following selector: $('div'). What does it select?",
-    choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
+}, {
+    question: "5. Which of the following data structure is linear data structure?",
+    choices: ["Trees", "Graphs", "Arrays", "None"],
     correctAnswer: 2
 },{
-	question: "9. How can a value be appended to an array?",
-    choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
+	question: "6. The operation of processing each element in the list is known as",
+    choices: ["sorting", "Merging", "Inserting", "Traversal"],
+    correctAnswer: 2
+},{
+	question: "7. Finding the location of the element with a given value is:",
+    choices: ["Traversal", "Search", "Sort", "None"],
+    correctAnswer: 3
+},{
+	question: "8. A BST is traversed in the following order recursively: Right, root, left The output sequence will be in",
+    choices: ["Ascending order", "Descending order", "Bitomic sequence", "No specific order"],
     correctAnswer: 1
 },{
-	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
-    choices: ["'32'", "'122'", "'13'", "'14'"],
+	question: "9. Linked lists are best suited",
+    choices: ["for relatively permanent collections of data", "for the size of the structure and the data in the structure are", "constantly changing", "for none of above situation"],
+    correctAnswer: 1
+},{
+	question: "10. Each array declaration need not give, implicitly or explicitly, the information about",
+    choices: ["the name of array", "the data type of array", "the first data from the set to be stored", "the index set of the array"],
     correctAnswer: 0
 }];
 

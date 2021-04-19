@@ -1,43 +1,43 @@
 var questions = [{
-    question: "1. What is app?",
-    choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
+    question: "1. What is a context in android ?",
+    choices: ["It is an interface to store global information about an application", " It is used to create new components.", "Android has two contexts, those are getContext() and getApplicationContext()", " All of Above"],
     correctAnswer: 3
 }, {
-    question: "2. How to empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
+    question: "2. What is the difference between margin and padding in android layout?",
+    choices: ["Margin is specifying the extra space left on all four sides in layout", "Padding is used to offset the content of a view by specific px or dp", "Both A and B are correct", "None of the above"],
     correctAnswer: 2
 }, {
-    question: "3. What function to add an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
-    correctAnswer: 1
+    question: "3. What are the return values of onStartCommand() in android services?",
+    choices: ["START_STICKY", "START_NOT_STICKY", "START_REDELIVER_INTENT", "START_REDELIVER_INTENT"],
+    correctAnswer: 3
 }, {
-    question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
-    choices: ["undefined", "0", "prints nothing", "Syntax error"],
-    correctAnswer: 0
+    question: "4. How to access the context in android content provider?",
+    choices: ["Using getContext() in onCreate()", "Using intent()", "Using getApplicationContext() at anywhere in an application", "A & C"],
+    correctAnswer: 3
 }, {
-    question: "5. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctAnswer: 0
-},{
-	question: "6. Which software company developed JavaScript?",
-    choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
-    correctAnswer: 1
-},{
-	question: "7. What would be the result of 3+2+'7'?",
-    choices: ["327", "12", "14", "57"],
+    question: "5. Which features are considered while creating android application?",
+    choices: ["Screen Size", " Input configuration", "Platform Version", " All of above"],
     correctAnswer: 3
 },{
-	question: "8. Look at the following selector: $('div'). What does it select?",
-    choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
-    correctAnswer: 2
+	question: "6.How many ports are allocated for new emulator?",
+    choices: ["2", "0", "10", "None"],
+    correctAnswer: 0
 },{
-	question: "9. How can a value be appended to an array?",
-    choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
+	question: "7. In which technique, we can refresh the dynamic content in android?",
+    choices: ["Java", "Ajax", "Android", "None"],
     correctAnswer: 1
 },{
-	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
-    choices: ["'32'", "'122'", "'13'", "'14'"],
-    correctAnswer: 0
+	question: "8. What is the HTTP response error code status in android?",
+    choices: ["status code < 100", " status code > 100", "status >= 400", "None"],
+    correctAnswer: 2
+},{
+	question: "9. What is transient data in android?",
+    choices: ["Permanent data", "Secure data", "Temporary data", "Logical data"],
+    correctAnswer: 3
+},{
+	question: "10. Can a class be immutable in android?",
+    choices: ["No, it can't", "Yes, Class can be immutable", "Can't make the class as final class", "None of the above"],
+    correctAnswer: 1
 }];
 
 

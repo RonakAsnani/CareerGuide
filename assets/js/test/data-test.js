@@ -1,42 +1,42 @@
 var questions = [{
-    question: "1. What is data?",
-    choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
+    question: "1. Data Analysis is a process of?",
+    choices: [" inspecting data", "cleaning data", "transforming data", "All of the above"],
     correctAnswer: 3
 }, {
-    question: "2. How to empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
+    question: "2. Which of the following is not a major data analysis approaches?",
+    choices: [" Data Mining", "Predictive Intelligence", "Business Intelligence", "Text Analytics"],
+    correctAnswer: 1
+}, {
+    question: "3. How many main statistical methodologies are used in data analysis?",
+    choices: ["2", "3", "4", "5"],
+    correctAnswer: 0
+}, {
+    question: "4. In descriptive statistics, data from the entire population or a sample is summarized with ?",
+    choices: ["integer descriptors", "floating descriptors", "pnumerical descriptors", "decimal descriptors"],
     correctAnswer: 2
 }, {
-    question: "3. What function to add an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
-    correctAnswer: 1
-}, {
-    question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
-    choices: ["undefined", "0", "prints nothing", "Syntax error"],
-    correctAnswer: 0
-}, {
-    question: "5. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctAnswer: 0
-},{
-	question: "6. Which software company developed JavaScript?",
-    choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
-    correctAnswer: 1
-},{
-	question: "7. What would be the result of 3+2+'7'?",
-    choices: ["327", "12", "14", "57"],
+    question: "5. Data Analysis is defined by the statistician?",
+    choices: ["William S.", "Hans Peter Luhn", "Gregory Piatetsky-Shapiro", " John Tukey"],
     correctAnswer: 3
 },{
-	question: "8. Look at the following selector: $('div'). What does it select?",
-    choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
+	question: "6.Which of the following is true about hypothesis testing?",
+    choices: ["answering yes/no questions about the data", "estimating numerical characteristics of the data", "describing associations within the data", "modeling relationships within the data"],
+    correctAnswer: 0
+},{
+	question: "7. The goal of business intelligence is to allow easy interpretation of large volumes of data to identify new opportunities.",
+    choices: ["TRUE", "FALSE", "Can be true or false", "Can not say"],
+    correctAnswer: 0
+},{
+	question: "8. The branch of statistics which deals with development of particular statistical methods is classified as",
+    choices: ["industry statistics", "economic statistics", "applied statistics", "None"],
     correctAnswer: 2
 },{
-	question: "9. How can a value be appended to an array?",
-    choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
-    correctAnswer: 1
+	question: "9.Which of the following is true about regression analysis?",
+    choices: ["answering yes/no questions about the data", " estimating numerical characteristics of the data", "modeling relationships within the data", "describing associations within the data"],
+    correctAnswer: 2
 },{
-	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
-    choices: ["'32'", "'122'", "'13'", "'14'"],
+	question: " Text Analytics, also referred to as Text Mining?",
+    choices: ["TRUE", "FALSE", "Can be true or false", "Can not say"],
     correctAnswer: 0
 }];
 

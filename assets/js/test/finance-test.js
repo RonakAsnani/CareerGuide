@@ -1,43 +1,43 @@
 var questions = [{
-    question: "1. What is finance?",
-    choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
-    correctAnswer: 3
-}, {
-    question: "2. How to empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
+    question: "1. In finance, we refer to the market where new securities are bought and sold for the first time?",
+    choices: ["Money market", "Capital market", "Primary market", "Secondary market"],
     correctAnswer: 2
 }, {
-    question: "3. What function to add an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
-    correctAnswer: 1
+    question: "2. Which one of the following can issue the corporate bond?",
+    choices: ["Individuals", "Government", " Public limited companies", "All of before"],
+    correctAnswer: 2
 }, {
-    question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
-    choices: ["undefined", "0", "prints nothing", "Syntax error"],
+    question: "3. Which is the treasurer’s responsibility for managing the firm’s cash and marketable securities?",
+    choices: ["Planning its capital structure", "Overseeing the corporate pension fund", "Selling stocks and bonds to raise capital", "All of the above"],
+    correctAnswer: 3
+}, {
+    question: "4. Which of the following is the activity which finance people are involved?",
+    choices: ["Investing decisions", "Marketing decisions", "Promotion decisions", " None of Above"],
     correctAnswer: 0
 }, {
-    question: "5. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctAnswer: 0
-},{
-	question: "6. Which software company developed JavaScript?",
-    choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
+    question: "5.What should be the long term focal point of financial management in a firm?",
+    choices: ["The number and types of products or services provided by the firm", "The creation of value for shareholders", "The minimization of the amount of taxes paid by the firm", "The profits earned by the firm"],
     correctAnswer: 1
 },{
-	question: "7. What would be the result of 3+2+'7'?",
-    choices: ["327", "12", "14", "57"],
+	question: "6.Financing decision determines?",
+    choices: ["Current asset", " Fix asset", "Equity", "Mix of finance"],
     correctAnswer: 3
 },{
-	question: "8. Look at the following selector: $('div'). What does it select?",
-    choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
-    correctAnswer: 2
-},{
-	question: "9. How can a value be appended to an array?",
-    choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
+	question: "7. Profit maximization is a?",
+    choices: ["Long term concept", "Short term concept", "Both a & b", "None"],
     correctAnswer: 1
 },{
-	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
-    choices: ["'32'", "'122'", "'13'", "'14'"],
-    correctAnswer: 0
+	question: "8. What are the three interrelated areas of finance?",
+    choices: ["Financial markets, option and forwards", "Banking, financial institutions and swap currency", "Investment, Financial management and Financial market & Financial institution", "All of above"],
+    correctAnswer: 2
+},{
+	question: "9. Which of the following is not normally a responsibility of the controller of the modern corporation?",
+    choices: ["Budgets and forecasts", "aAsset management", "Financial reporting", "Cost accounting"],
+    correctAnswer: 1
+},{
+	question: "10. Financial decisions are concerned with which of the following?",
+    choices: ["Making investment decisions that optimize economic value", "Making asset management decisions that optimize economic wealth", "Raising capital that is needed for growth", "All of the above"],
+    correctAnswer: 3
 }];
 
 
