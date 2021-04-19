@@ -32,13 +32,50 @@
         </li>
         <li class="nav-item">
   
-          <a href="" class="nav-link text-dark font-italic bg-light">
-            <!-- <i class="fa fa-user-graduate mr-3 text-primary fa-fw"></i> -->
-            <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>
-            Give Test
+          
+          <!-- <i class="fa fa-user-graduate mr-3 text-primary fa-fw"></i> -->
+          
+            <% if(user.interest == "web-development") {%>
+              
+           <a class="nav-link text-dark font-italic bg-light" href="/tests/web-development">
+            <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
           </a>
-  
-        </li>
+           
+            <%} else if(user.interest == "app-development") {%>
+              <a class="nav-link text-dark font-italic bg-light" href="/tests/app-development">
+                <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
+              </a>
+            <%} else if(user.interest == "competitive") {%>
+              <a class="nav-link text-dark font-italic bg-light" href="/tests/competitive">
+                <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
+              </a>
+              <%} else if(user.interest == "machine-learning") {%>
+                <a class="nav-link text-dark font-italic bg-light" href="/tests/machine-learning">
+                  <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
+                </a>
+           <%} else if(user.interest == "data-analytics") {%>  
+            <a class="nav-link text-dark font-italic bg-light" href="/tests/data-analytics">
+              <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
+            </a>
+
+            <%} else if(user.interest == "mba") {%>
+              <a class="nav-link text-dark font-italic bg-light" href="/tests/mba">
+                <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
+              </a>
+              <%} else if(user.interest == "finance") {%>
+                <a class="nav-link text-dark font-italic bg-light" href="/tests/finance">
+                  <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
+                </a>
+                <%} else if(user.interest == "music") {%>
+                  
+                  <a class="nav-link text-dark font-italic bg-light" href="/tests/music">
+                    <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>Give test
+                  </a>
+            <%}%>   
+
+       
+
+      </li>
         <li class="nav-item">
   
           <a href="/users/test-rules" class="nav-link text-dark font-italic bg-light">
@@ -105,15 +142,22 @@
           class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
   
       <div id="cottent">
-        <div style="background-color: aliceblue; border-radius: 15px; color: slategray; padding: 30px;" id="info">
-          <h2>Rules for test:</h2>
-          <p>1) Test will be of 30 minutes</p>
+      
+        
+        <div style="border-radius: 25px; padding: 30px; margin: 0px auto;  display: flex; justify-content: space-around;" class="card" style="width: 18rem;">
+          <!-- <img class="card-img-top" src="/images/student.jpg" alt="Card image cap"> -->
+          <div style="color: slategray;" class="card-body">
+            <h5 style="color: slategray;" class="card-title">Rules for test:</h5>
+            <p class="card-text">Pass the test and become a mentor</p>
+            <p>1) Test will be of 30 minutes</p>
           <p>2) Test will consist of 10 questions</p>
           <p>3) Questions will be of mcq type</p>
           <p>4) You have only one attempt </p>
           <p>5) You need atleast 80% to qualify</p>
-        </div>
+          </div>
   
+  
+        </div>
   
       </div>
   

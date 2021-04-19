@@ -21,6 +21,8 @@ router.get('/mentor-info',passport.checkAuthentication,usersController.showInfo)
 
 router.post('/verify-mentor',usersController.verifyMentor);
 
+router.post('/summary',usersController.summary);
+
 router.post('/remove-interest',usersController.removeInterest);
 // use passport as a middleware to authenticate
 router.post('/create-session',passport.authenticate(

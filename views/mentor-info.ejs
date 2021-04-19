@@ -24,7 +24,7 @@
       <ul class="nav flex-column bg-white mb-0" id="son-1">
         <li class="nav-item">
   
-          <a href="" class="nav-link text-dark font-italic bg-light">
+          <a href="/users/mentor_profile" class="nav-link text-dark font-italic bg-light">
             <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
             Dashboard
           </a>
@@ -41,7 +41,7 @@
         </li>
         <li class="nav-item">
   
-          <a href="" class="nav-link text-dark font-italic bg-light">
+          <a href="/users/mentor-info" class="nav-link text-dark font-italic bg-light">
             <!-- <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> -->
             <i class="fas fa-chalkboard-teacher mr-3 text-primary fa-fw"></i>
             Your Info
@@ -106,17 +106,25 @@
   
       <div id="cottent">
   
-        <div style="padding: 30px; margin: 0px auto;  display: flex; justify-content: space-around;" class="card" style="width: 18rem;">
-          <!-- <img class="card-img-top" src="/images/student.jpg" alt="Card image cap"> -->
-          <div style="text-align: center;" class="card-body">
+        <div style="border-radius: 25px; padding: 30px; margin: 0px auto;  display: flex; justify-content: space-around;" class="card" style="width: 18rem;">
+           <img style="display: block; margin: auto; height: 250px; width: 250px;" class="card-img-top" src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png" alt="Card image cap">
+          <div style="color: slategray;" class="card-body">
             <h5 class="card-title">Name: <%=user.name %></h5>
             <p class="card-text">Email: <%=user.email %></p>
             
             <p>Role: <%=user.field %></p>
             <p>Expert in: <%=user.interest %></p>
+            <% if(locals.user.summary) {%>
+              <p> Summary: <%= user.summary %></p>  
+            <%}%>
 
           </div>
-  
+
+          <form action="/users/summary" method="POST">
+            <input size="50" style="margin-top: 50px; height: 50px; border-style: none; border-bottom: 1px slategray solid;" type="text" name="mentorsummary" placeholder="Enter a few lines about your skills and achievements." required>
+
+            <input style="border-radius: 5px; background-color: slategray; color: white;" type="submit" value="Update/Post">
+          </form>
   
         </div>
   
