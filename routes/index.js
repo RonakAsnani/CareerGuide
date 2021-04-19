@@ -17,6 +17,7 @@ router.get('/articles',articleControl.articles);
 
 router.use('/users',require('./users'));
 router.use('/tutor',require('./tutor'));
+router.use('/dashboard',require('./dashboard'));
 
 router.use('/tests',require('./tests'));
 

@@ -54,6 +54,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .disp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   
   .page-content {
     width: calc(100% - 17rem);

@@ -12,9 +12,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
 </head>
 
 <div id="maine">
@@ -105,18 +102,17 @@
     <!-- Toggle button -->
     <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i
         class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
-    <div class="disp">
-      <div class="card" style="width: 18rem;">
+      <div class="disp">
+         <div class="card" style="width: 18rem;">
         <!-- <img class="card-img-top" src="/images/student.jpg" alt="Card image cap"> -->
         <div class="card-body">
           <h5 class="card-title">Students Enrolled</h5>
           <h2 class="card-text">
             <strong>
 
-              <%=student_enrolled%>
+              <%=student_enrolled%></h2>
             </strong>
-          </h2>
-         
+          
         </div>
 
 
@@ -140,103 +136,31 @@
         </ul>
       </div>
 
+
       <div class="card" style="width: 18rem;">
         <!-- <img class="card-img-top" src="/images/images.png" alt="Card image cap"> -->
         <div class="card-body">
           <h5 class="card-title">Mentors Enrolled</h5>
+          
           <h2 class="card-text"><strong>
 
             <%=mentor_enrolled%>
           </strong>
-          </h2>
+        </h2>
          
         </div>
       </div>
+      
     </div>
 
     <div id="sel">
 
-     
+      
     </div>
-    <div id="cottent" style="margin-top: 5%;">
+    <div id="cottent">
 
+     
 
-      <h1 style="color: #0c63e4; text-shadow: 1px 1px white; text-align:center">
-        <%=topic%>
-      </h1>
-
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              <strong>
-                
-                Get an Introduction
-              </strong>
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <%=one%>
-              <a href=<%=link1 %> >Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <strong>
-
-                Professional Life
-              </strong>
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <%=two%>
-              <a href=<%=link2 %> >Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <strong>
-
-                How to Pursue
-              </strong>
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <%=three%><a href=<%=link3 %> >Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              <strong>
-
-                Recommended Courses
-              </strong>
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <%=four%><a href=<%=link4 %> >Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
     </div>
@@ -248,5 +172,6 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="/js/dashboard.js"></script>
