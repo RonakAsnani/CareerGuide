@@ -11,6 +11,8 @@ student.addEventListener('click', function () {
 
 
     <form action="/users/create" method="POST">
+    <h2 style="text-align: center; margin: 12px 0px;">Student</h2>
+
     
     <div class="form-group row">
         <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
@@ -122,6 +124,8 @@ mentor.addEventListener('click', function () {
     doc.innerHTML = `
 
     <form action="/users/create" method="POST">
+    <h2 style="text-align: center; margin: 12px 0px;">Mentor</h2>
+
     
     <div class="form-group row">
         <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
