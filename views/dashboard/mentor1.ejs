@@ -17,9 +17,9 @@
 <div id="maine">
 
   <div class="vertical-nav bg-white" id="sidebar">
-   
 
-   
+
+
 
     <ul class="nav flex-column bg-white mb-0" id="son-1">
       <li class="nav-item">
@@ -41,7 +41,7 @@
       </li>
       <li class="nav-item">
 
-        <a href="/users/tutor" class="nav-link text-dark font-italic bg-light">
+        <a href="/tutor/start" class="nav-link text-dark font-italic bg-light">
           <!-- <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> -->
           <i class="fas fa-chalkboard-teacher mr-3 text-primary fa-fw"></i>
           Tutor
@@ -75,17 +75,17 @@
       </li>
     </ul>
 
-    
+
     <div class="py-4 px-3 mb-4 bg-light" id="son-2">
       <div class="media d-flex align-items-center"><img
           src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65"
           class="mr-3 rounded-circle img-thumbnail shadow-sm">
         <div class="media-body">
           <h4 class="m-0">
-            <%=name%>
+            <%=user.name%>
           </h4>
           <p class="font-weight-light text-muted mb-0">
-            <%=field%>
+            <%=user.field%>
           </p>
         </div>
       </div>
@@ -101,50 +101,54 @@
     <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i
         class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
 
-    <div id="cottent">
 
-      <div class="card" class="cardii" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+    <div id="mein">
+      <div id="sel">
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="/tutor/webDev">Web Develpment</a></li>
+            <li><a class="dropdown-item" href="/tutor/appDev">Andriod Develpment</a></li>
+            <li><a class="dropdown-item" href="/tutor/competitve">Competitive programming</a></li>
+            <li><a class="dropdown-item" href="/tutor/ml">Machine Learning</a></li>
+            <li><a class="dropdown-item" href="/tutor/data">Data</a></li>
+            <li><a class="dropdown-item" href="/tutor/mba">MBA</a></li>
+            <!-- <li><a class="dropdown-item" href="/tutor/coding">Coding</a></li> -->
+            <li><a class="dropdown-item" href="/tutor/finance">Finance</a></li>
+            <li><a class="dropdown-item" href="/tutor/music">Music</a></li>
+          </ul>
         </div>
       </div>
 
+      <div id="cottent">
+        <%for(const i of mentor_list){%>
 
-      <div class="card" class="cardii" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+          <div class="card" style="width: 18rem;">
+            <img src="https://www.pngitem.com/pimgs/m/405-4053593_students-group-student-group-icon-png-transparent-png.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%=i.name%></h5>
+
+            </div>
+            <ul class="list-group list-group-flush">
+          
+              <li class="list-group-item"><%=i.interest%></li>
+              <li class="list-group-item"><%=i.email%></li>
+            </ul>
+
+          </div>
+        <%}%>
       </div>
-
-      <div class="card" class="cardii" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card" class="cardii" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
     </div>
+
+
+
+
 
 
   </div>

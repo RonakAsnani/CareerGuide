@@ -16,6 +16,7 @@ const articleControl = require('../controllers/articles_controller');
 router.get('/articles',articleControl.articles);
 
 router.use('/users',require('./users'));
+router.use('/tutor',require('./tutor'));
 
 router.use('/tests',require('./tests'));
 
