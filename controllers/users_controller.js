@@ -29,6 +29,16 @@ module.exports.detail=function(req,res){
         
     })
 }
+module.exports.testRules = function(req,res){
+    return res.render('test-rules',{
+        title: "rules"
+    })
+}
+module.exports.showInfo = function(req,res){
+    return res.render('mentor-info',{
+        title: "info"
+    })
+}
 
 module.exports.signUp = function(req,res){
 
@@ -54,6 +64,8 @@ module.exports.signIn = function(req,res){
         title: "CareerGuide | Sign In"
     })
 }
+
+
 
 // // get sign up data
 module.exports.create = function(req,res){
@@ -90,10 +102,35 @@ module.exports.verifyMentor = function(req,res){
             console.log("Something wrong when updating data!");
         }
     
-        console.log(doc);
+        //console.log(doc);
     });
     // console.log(res.locals.user);
     return res.redirect('/users/mentor_profile');
+}
+
+module.exports.summary = function(req,res){
+    //console.log(req.body.mentorsummary);
+    User.findOneAndUpdate({email:res.locals.user.email},{$set:{summary: req.body.mentorsummary}}, {new: true}, (err, doc) => {
+        if (err) {
+            console.log("Something wrong when updating data!");
+        }
+        
+    })
+    return res.redirect('/users/mentor-info')
+}
+
+module.exports.studentDisplay = function(req,res){
+    User.find({field: "student"},function(err,users){
+        if (err) {
+            console.log("Something wrong when updating data!");
+        }
+        const studentList = users;
+        return res.render('student-display',{
+            title:"display",
+            student_list : studentList
+        })
+        
+    })
 }
 
 module.exports.removeInterest = function(req,res){

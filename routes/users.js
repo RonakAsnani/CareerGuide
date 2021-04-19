@@ -1,6 +1,7 @@
 const express =require("express");
 const router = express.Router();
 const passport = require("passport");
+const { pass } = require("../config/mongoose");
 
 const usersController = require('../controllers/users_controller');
 
@@ -14,10 +15,16 @@ router.get('/sign-in',usersController.signIn);
 router.get('/tutor',usersController.tutor);
 router.get('/detail',usersController.detail);
 
-
+router.get('/test-rules',usersController.testRules);
 router.post('/create',usersController.create);
 
+router.get('/mentor-info',passport.checkAuthentication,usersController.showInfo);
+
+router.get('/student-display',passport.checkAuthentication,usersController.studentDisplay);
+
 router.post('/verify-mentor',usersController.verifyMentor);
+
+router.post('/summary',usersController.summary);
 
 router.post('/remove-interest',usersController.removeInterest);
 // use passport as a middleware to authenticate

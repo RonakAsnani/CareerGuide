@@ -1,5 +1,5 @@
 var questions = [{
-    question: "1. How do you write 'Hello World' in an alert box?",
+    question: "1. What is competitive?",
     choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
     correctAnswer: 3
 }, {
