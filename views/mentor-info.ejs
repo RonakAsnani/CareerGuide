@@ -32,7 +32,7 @@
         </li>
         <li class="nav-item">
   
-          <a href="" class="nav-link text-dark font-italic bg-light">
+          <a href="/users/student-display" class="nav-link text-dark font-italic bg-light">
             <!-- <i class="fa fa-user-graduate mr-3 text-primary fa-fw"></i> -->
             <i class="fas fa-user-graduate mr-3 text-primary fa-fw"></i>
             Students
@@ -114,7 +114,7 @@
             
             <p>Role: <%=user.field %></p>
             <p>Expert in: <%=user.interest %></p>
-            <% if(locals.user.summary) {%>
+            <% if(user.summary) {%>
               <p> Summary: <%= user.summary %></p>  
             <%}%>
 

@@ -1,6 +1,7 @@
 const express =require("express");
 const router = express.Router();
 const passport = require("passport");
+const { pass } = require("../config/mongoose");
 
 const usersController = require('../controllers/users_controller');
 
@@ -18,6 +19,8 @@ router.get('/test-rules',usersController.testRules);
 router.post('/create',usersController.create);
 
 router.get('/mentor-info',passport.checkAuthentication,usersController.showInfo);
+
+router.get('/student-display',passport.checkAuthentication,usersController.studentDisplay);
 
 router.post('/verify-mentor',usersController.verifyMentor);
 

@@ -119,6 +119,15 @@ module.exports.summary = function(req,res){
     return res.redirect('/users/mentor-info')
 }
 
+module.exports.studentDisplay = function(req,res){
+    User.find({field: "student"},function(err,users){
+        if (err) {
+            console.log("Something wrong when updating data!");
+        }
+        
+    })
+}
+
 module.exports.removeInterest = function(req,res){
     //console.log(res.locals.user);
     // res.locals.user.interest == "none";
