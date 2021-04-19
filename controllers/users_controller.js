@@ -70,7 +70,11 @@ module.exports.signIn = function(req,res){
 // // get sign up data
 module.exports.create = function(req,res){
     if(req.body.password != req.body.confirm_password){
-        return res.redirect('back');
+        
+        //return res.redirect('back');
+        return res.render('signup_copy',{
+            title: "match"
+        })
     }
     User.findOne({email : req.body.email},function(err,user){
         if(err){
@@ -87,7 +91,9 @@ module.exports.create = function(req,res){
                 return res.redirect('/users/sign-in');
             })
         }else{
-            return res.redirect('back');
+            return res.render('signup_copy',{
+                title: "exist"
+            })
         }
 
     

@@ -6,17 +6,141 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="containere">
         <h1 style="text-align: center;">Select Your Account</h1>
         <div id="top">
             <div><button type="button" id="btttn-1" class="btn btn-primary ">Student</button></div>
-            <div><button type="button" id="btttn-2" class="btn btn-primary">Mentor</button></div>
+            <div><button type="button" id="btttn-2" class="btn btn-secondary">Mentor</button></div>
 
 
 
         </div>
         <div id="bottom">
+            <% if(title == "match") {%>
+                <div style="
+                       background-color:rgb(235, 141, 141);
+                       color: black;
+                       width: 300px;
+                       border: 1px red solid;
+                       display: block;
+                       margin: auto;
+                       text-align: center;
+                       border-radius: 5px;                
+                " >Password does not match</div>  
+              <%}%>
+              <% if(title == "exist") {%>
+                <div style="
+                       background-color:rgb(235, 141, 141);
+                       color: black;
+                       width: 300px;
+                       border: 1px red solid;
+                       display: block;
+                       margin: auto;
+                       text-align: center;
+                       border-radius: 5px;                
+                " >User Already exist</div>  
+              <%}%>
+            <form action="/users/create" method="POST">
+                <h2 style="text-align: center; margin: 12px 0px;">Student</h2>
+
+                <div class="form-group row">
+                    <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputName3" name="name" placeholder="Name">
+                    </div>
+                </div>
+                <br> <br>
+
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" name="email" required
+                            placeholder="Email">
+                    </div>
+                </div>
+                <br> <br>
+
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" name="password" required
+                            placeholder="Password">
+                    </div>
+                </div>
+                <br> <br>
+                <div class="form-group row">
+                    <label for="inputPassword4" class="col-sm-2 col-form-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword4" name="confirm_password" required
+                            placeholder="Confirm Password">
+                    </div>
+                    <br> <br>
+
+                    <div class="row" style="display:none;">
+                        <legend class="col-form-label col-sm-2 pt-0">Check Box</legend>
+                        <div class="col-sm-10">
+
+
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" name="field" type="checkbox" value="student"
+                                    id="flexCheckCheckedDisabled" checked>
+                                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                    checked checkbox
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <br> <br>
+
+
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Interest</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridRadios1" value="option1">
+                                    <label class="form-check-label" for="gridRadios1">
+
+                                        Coding
+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Finance
+                                    </label>
+                                </div>
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" id="gridRadios3" value="option3">
+                                    <label class="form-check-label" for="gridRadios3">
+                                        Research
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br> <br>
+
+                    <div class="form-group row" style="    text-align: center;
+            margin-top: 25px;">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                        </div>
+                    </div>
+                    <br> <br>
+            </form>
            
+
+            
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
