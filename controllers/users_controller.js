@@ -124,6 +124,11 @@ module.exports.studentDisplay = function(req,res){
         if (err) {
             console.log("Something wrong when updating data!");
         }
+        const studentList = users;
+        return res.render('student-display',{
+            title:"display",
+            student_list : studentList
+        })
         
     })
 }
