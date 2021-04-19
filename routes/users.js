@@ -12,7 +12,7 @@ router.get('/mentor_profile',passport.checkAuthentication,usersController.mentor
 router.get('/sign-up',usersController.signUp);
 
 router.get('/sign-in',usersController.signIn);
-router.get('/tutor',usersController.tutor);
+// router.get('/tutor',usersController.tutor);
 router.get('/detail',usersController.detail);
 
 router.get('/test-rules',usersController.testRules);

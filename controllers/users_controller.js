@@ -3,8 +3,7 @@ const User = require('../models/users');
 module.exports.profile = function(req,res){
     return res.render('dashboard/dashboard',{
         title: "User Profile",
-        name:"Jakass coder",
-        field:"Rapchik coder"
+       
     })
 }
 module.exports.mentorProfile = function(req,res){
@@ -13,19 +12,15 @@ module.exports.mentorProfile = function(req,res){
     })
 }
 
-module.exports.tutor=function(req,res){
-    return res.render('dashboard/mentor1',{
-        title:"mentorsss",
-        name:"Jakass coder",
-        field:"Rapchik coder"
+// module.exports.tutor=function(req,res){
+//     return res.render('dashboard/mentor1',{
+//         title:"Mentors"
         
-    })
-}
+//     })
+// }
 module.exports.detail=function(req,res){
     return res.render('dashboard/student',{
-        title:"mentorsss",
-        name:"Jakass coder",
-        field:"Rapchik coder"
+        title:"Detail"
         
     })
 }
@@ -138,6 +133,8 @@ module.exports.studentDisplay = function(req,res){
         
     })
 }
+
+
 
 module.exports.removeInterest = function(req,res){
     //console.log(res.locals.user);
