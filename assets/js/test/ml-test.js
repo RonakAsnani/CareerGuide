@@ -1,42 +1,42 @@
 var questions = [{
-    question: "1. What is ml?",
-    choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
+    question: "1. What is true about Machine Learning?",
+    choices: ["Machine Learning (ML) is that field of computer science", "ML is a type of artificial intelligence that extract patterns out of raw data by using an algorithm or method.", "The main focus of ML is to allow computer systems learn from experience without being explicitly programmed or human intervention.", " All of the above"],
     correctAnswer: 3
 }, {
-    question: "2. How to empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
-    correctAnswer: 2
-}, {
-    question: "3. What function to add an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
-    correctAnswer: 1
-}, {
-    question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
-    choices: ["undefined", "0", "prints nothing", "Syntax error"],
-    correctAnswer: 0
-}, {
-    question: "5. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctAnswer: 0
-},{
-	question: "6. Which software company developed JavaScript?",
-    choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
-    correctAnswer: 1
-},{
-	question: "7. What would be the result of 3+2+'7'?",
-    choices: ["327", "12", "14", "57"],
+    question: "2. ML is a field of AI consisting of learning algorithms that?",
+    choices: ["Improve their performance", "At executing some task", "Over time with experience", "All of the above"],
     correctAnswer: 3
-},{
-	question: "8. Look at the following selector: $('div'). What does it select?",
-    choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
+}, {
+    question: "3. The action _______ of a robot arm specify to Place block A on block B.",
+    choices: [" STACK(A,B)", "LIST(A,B)", "QUEUE(A,B)", "ARRAY(A,B)"],
+    correctAnswer: 0
+}, {
+    question: "4. p → 0q is not a?",
+    choices: ["hack clause", "horn clause", "structural clause", "system clause"],
+    correctAnswer: 1
+}, {
+    question: "5.In Model based learning methods, an iterative process takes place on the ML models that are built based on various model parameters, called ?",
+    choices: ["mini-batches", "optimizedparameters", "Syntax error", "superparameters"],
     correctAnswer: 2
 },{
-	question: "9. How can a value be appended to an array?",
-    choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
+	question: "6.  A__________ begins by hypothesizing a sentence (the symbol S) and successively predicting lower level constituents until individual preterminal symbols are written.",
+    choices: ["bottom-up parser", "top parser", "top-down parser", "bottom parser"],
+    correctAnswer: 2
+},{
+	question: "7. A model of language consists of the categories which does not include ________.",
+    choices: ["System unit", "structural units", "data units", "empirical units"],
     correctAnswer: 1
 },{
-	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
-    choices: ["'32'", "'122'", "'13'", "'14'"],
+	question: "8.Different learning methods does not include?",
+    choices: ["Introduction", "Analogy", "Deduction", "Memorization"],
+    correctAnswer: 0
+},{
+	question: "9. The model will be trained with data in one single batch is known as ?",
+    choices: ["Batch learning", "Offline learning", "Both A and B", "None of these"],
+    correctAnswer: 2
+},{
+	question: "10.Which of the following are ML methods?",
+    choices: ["based on human supervision", "supervised Learning", "semi-reinforcement Learning", "All of the above"],
     correctAnswer: 0
 }];
 

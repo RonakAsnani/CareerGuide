@@ -1,43 +1,43 @@
 var questions = [{
-    question: "1. What is mba?",
-    choices: ["msg('Hello World')", "msgBox('Hello World');", "alertBox('Hello World');", "alert('Hello World');"],
-    correctAnswer: 3
-}, {
-    question: "2. How to empty an array in JavaScript?",
-    choices: ["arrayList[]", "arrayList(0)", "arrayList.length=0", "arrayList.len(0)"],
+    question: "1. _______ refers to the exchange of goods or commodities against money or service.",
+    choices: ["Distribution", "Place", "Sales", "Myopia;"],
     correctAnswer: 2
 }, {
-    question: "3. What function to add an element at the begining of an array and one at the end?",
-    choices: ["push,unshift", "unshift,push", "first,push", "unshift,last"],
+    question: "2. Sale has ________ generating function in an organization.",
+    choices: ["Only loss", "only revenue", "both loss as well as revenue", "neither loss nor rvenue"],
     correctAnswer: 1
 }, {
-    question: "4. What will this output? var a = [1, 2, 3]; console.log(a[6]);",
-    choices: ["undefined", "0", "prints nothing", "Syntax error"],
-    correctAnswer: 0
+    question: "3. Even prior to the introduction of money, people used to exchange goods in order to fulfil the needs, which is known as the _______.",
+    choices: ["Charter System", "Marketing Myopia", "Barter System", "Bargain System"],
+    correctAnswer: 2
 }, {
-    question: "5. What would following code return? console.log(typeof typeof 1);",
-    choices: ["string", "number", "Syntax error", "undefined"],
-    correctAnswer: 0
-},{
-	question: "6. Which software company developed JavaScript?",
-    choices: ["Mozilla", "Netscape", "Sun Microsystems", "Oracle"],
+    question: "4. The __________ is the provider of goods or services.",
+    choices: ["Supplier", "Buyer", "Seller", "Consumer"],
+    correctAnswer: 2
+}, {
+    question: "5. _______is the process of making a product available to the end consumer or business.",
+    choices: ["Supplier", "Distribution", "Exchange", "Barter"],
     correctAnswer: 1
 },{
-	question: "7. What would be the result of 3+2+'7'?",
-    choices: ["327", "12", "14", "57"],
-    correctAnswer: 3
-},{
-	question: "8. Look at the following selector: $('div'). What does it select?",
-    choices: ["The first div element", "The last div element", "All div elements", "Current div element"],
+	question: "6. In Sales Management, ERP stands for ________",
+    choices: ["Enterprise Research Planning", " Enterprise Resource Process", "Enterprise Resource Planning", "Enterprise Resale Planning"],
     correctAnswer: 2
 },{
-	question: "9. How can a value be appended to an array?",
-    choices: ["arr(length).value;", "arr[arr.length]=value;", "arr[]=add(value);", "None of these"],
+	question: "7.__________refers to the administration of the personal selling component of a company’s marketing program.",
+    choices: [" Sales management", "Distribution Management", "Promotion Management", "Marketing Management"],
+    correctAnswer: 0
+},{
+	question: "8. Sales and Distribution Management majorly focuses on the___________ aspect of an organization.",
+    choices: ["Buying", "Selling", "Negotiating", "Producing"],
     correctAnswer: 1
 },{
-	question: "10. What will the code below output to the console? console.log(1 +  +'2' + '2');",
-    choices: ["'32'", "'122'", "'13'", "'14'"],
-    correctAnswer: 0
+	question: "9. Personal selling has ________ communication.",
+    choices: ["One way", "Two way", "Indirect", "Direct"],
+    correctAnswer: 1
+},{
+	question: "10. Most producers use _______ to bring their products to market or end users.",
+    choices: ["Broker", "Retailers", "Intermediaries", "Distributors"],
+    correctAnswer: 2
 }];
 
 
