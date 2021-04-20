@@ -4,11 +4,12 @@ globalThis.student=11;
 globalThis.mentor=11;
 
 User.find({field:"student"},function(err,student){
+    //console.log(student);
     if(err){console.log('err while fetching data'); return}
     globalThis.student=student.length;
 
 })
-User.find({field:"mentor"},function(err,mentor){
+User.find({verified: "true"},function(err,mentor){
     if(err){console.log('err while fetching data'); return}
     globalThis.mentor=mentor.length;
 
@@ -19,7 +20,7 @@ module.exports.webDev=function(req,res){
         return res.render('dashboard/dashboard',{
             title:'Dashboard',
             topic:"Web Development",
-            one :"Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are preforming and the platforms on which they are working.<a>",
+            one :"Web development is the building and maintenance of websites; it’s the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or ‘devs’, do this by using a variety of coding languages. The languages they use depends on the types of tasks they are preforming and the platforms on which they are working.",
             two :"Your work schedule is typically far from routine, because you’ll often be solving problems as they arise. Schedules and deadlines can however apply to big projects. Here is an example of a day in the life of a front-end web developer:",
             three :"Each element of a website is linked to something else, and it’s a complex job to build a website successfully. Depending on their specific jobs, web developers will be proficient in using various software programs (e.g. JavaScript frameworks, version control, CSS), and will have not only the specialized knowledge that characterizes their roles, but also an understanding of the process as a whole. Prior to starting out, it’s wise to get an understanding of the type of web development work that seems interesting—such as user interface design, mobile application development, or front-end development—to best set the stage for future education and training.",
             four :"Learn Web Development With Udemy At Your Own Pace. Start Today With a Special Discount. Join Millions of Learners From Around The World Already Learning On Udemy!",
