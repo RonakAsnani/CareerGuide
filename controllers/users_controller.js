@@ -1,8 +1,10 @@
 const User = require('../models/users');
 
+
+
 module.exports.profile = function(req,res){
     return res.render('dashboard/dashboard',{
-        title: "User Profile",
+        title: "User Profile"
        
     })
 }
@@ -157,7 +159,7 @@ module.exports.removeInterest = function(req,res){
 module.exports.createSession = function(req,res){
     User.findOne({email:req.body.email},function(err,user){
         if(user.field == "student"){
-            return res.redirect('/users/profile');
+            return res.redirect('/dashboard/start');
         }
         if(user.field == "mentor"){
             return res.redirect('/users/mentor_profile');
