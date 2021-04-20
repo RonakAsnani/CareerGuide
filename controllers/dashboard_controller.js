@@ -95,63 +95,63 @@ module.exports.data=function(req,res){
     return res.render('dashboard/dashboard',{
         title:'Dashboard',
         topic:"Data Analytics",
-        one :"aasasasa",
-        two :"asasas",
-        three :"asasas",
-        four :"asasas",
+        one :"As the process of analyzing raw data to find trends and answer questions, the definition of data analytics captures its broad scope of the field. However, it includes many techniques with many different goals.",
+        two :" Ever wondered what a data analyst does with their day? Keen to find out what it’s actually like to be a data analyst? ",
+        three :"The biggest roadblock for a fresher to enter in a industry is ‘clearing job interviews’. Freshers usually struggle in this stage due to lack of guidance and smartness.",
+        four :"If you are interested in learning Data Analysis, then here is a list of Best Data Analysis Courses, Classes, Tutorials, Training, and Certification programs available online for 2021. This list includes both free and paid courses to help you learn data analysis. ",
         mentor_enrolled:globalThis.mentor,
         student_enrolled:globalThis.student,
-        link1:"",
-        link2:"",
-        link3:"",
-        link4:""
+        link1:"https://www.mastersindatascience.org/learning/what-is-data-analytics/",
+        link2:"https://careerfoundry.com/en/blog/data-analytics/whats-it-like-to-actually-be-a-data-analyst/",
+        link3:"https://www.analyticsvidhya.com/10-analytics-related-career/",
+        link4:"https://digitaldefynd.com/best-data-analysis-courses/"
     })
 }
 module.exports.mba=function(req,res){
     return res.render('dashboard/dashboard',{
         title:'Dashboard',
-        topic:"MBA",
-        one :"aasasasa",
-        two :"asasas",
-        three :"asasas",
-        four :"asasas",
+        topic:"Master of Business Administration",
+        one :"An MBA degree is a popular steppingstone to C-suite jobs at large corporations, and it is also an asset for budding entrepreneurs.",
+        two :"“You know how you let yourself think that everything will be alright if you can only go to a certain place or do a certain thing. But when you get there, you find it’s not that simple”.",
+        three :"When applying for an MBA, you find motivation by realising how this diploma will help your future career. But before you can dive into the business world, you need to go through the application process and fulfil certain requirements.",
+        four :"CAT, also known as Common Admission Test is a prerequisite for admission to major top B-Schools across India.",
         mentor_enrolled:globalThis.mentor,
         student_enrolled:globalThis.student,
-        link1:"",
-        link2:"",
-        link3:"",
-        link4:""
+        link1:"https://www.usnews.com/education/best-graduate-schools/top-business-schools/articles/what-an-mba-degree-is-and-what-you-need-to-know",
+        link2:"https://insideiim.com/life-after-mba-different",
+        link3:"https://www.mastersportal.com/articles/2634/10-steps-you-need-to-take-to-successfully-apply-for-an-mba-in-2021.html",
+        link4:"https://www.exambazaar.com/blogpost/best-cat-online-coaching-free-paid"
     })
 }
 module.exports.finance=function(req,res){
     return res.render('dashboard/dashboard',{
         title:'Dashboard',
         topic:"Finance",
-        one :"aasasasa",
-        two :"asasas",
-        three :"asasas",
-        four :"asasas",
+        one :"Finance is defined as the management of money and includes activities such as investing, borrowing, lending, budgeting, saving, and forecasting. ",
+        two :"The motivation and ambition to become the “Wolf of Wall Street” (read Best movies for MBA students) drives many young professionals to the world of investment banking (IB).",
+        three :"If the finance industry intrigues you, and terms such as stocks, securities, and investment mediums ignite a fire in you, then a career in finance is worth considering!",
+        four :"If you’re considering a career as a financial analyst, or are already working as one, having a professional finance certification can significantly increase your earning power, reputation, and ability to deliver high-quality financial analysis.",
         mentor_enrolled:globalThis.mentor,
         student_enrolled:globalThis.student,
-        link1:"",
-        link2:"",
-        link3:"",
-        link4:""
+        link1:"https://corporatefinanceinstitute.com/resources/knowledge/finance/what-is-finance-definition/",
+        link2:"https://www.mbacrystalball.com/blog/2019/08/21/life-after-investment-banking-exit-options/",
+        link3:"https://www.mindler.com/blog/careers-in-finance-in-india/#:~:text=To%20become%20a%20stockbroker%2C%20you,analysis%2C%20and%20stock%20market%20research.",
+        link4:"https://corporatefinanceinstitute.com/resources/careers/designations/top-finance-certifications-list/"
     })
 }
 module.exports.music=function(req,res){
     return res.render('dashboard/dashboard',{
         title:'Dashboard',
         topic:"Music",
-        one :"aasasasa",
-        two :"asasas",
-        three :"asasas",
-        four :"asasas",
+        one :"The music industry involves the production, distribution, and sale of music in a variety of forms as well as the promotion of live musical performance",
+        two :"Setting aside the fact that no one really has a clear understanding of what actually “making it” means in music (Is it getting signed? Going platinum? Selling out Madison Square Garden? Getting a top 40 hit? Making a million dollars? ",
+        three :"The field of music is a huge part of the entertainment industry. It employs many different types of performers, songwriters, band members, technicians and support staff.",
+        four :"The wide array of possible careers for music graduates include: musician/performer, music teacher, music composer, music therapist, sound technician, radio producer, radio broadcast assistant, broadcast engineer, artist representative, artist agent/manager.",
         mentor_enrolled:globalThis.mentor,
         student_enrolled:globalThis.student,
-        link1:"",
-        link2:"",
-        link3:"",
-        link4:""
+        link1:"https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/music-industry",
+        link2:"https://www.digitalmusicnews.com/2015/08/03/18-musicians-who-made-it-later-in-life/",
+        link3:"https://www.mindler.com/blog/careers-for-music-lovers/#:~:text=Music%20in%20itself%20is%20healing.&text=However%2C%20very%20few%20are%20blessed,members%2C%20technicians%20and%20support%20staff.",
+        link4:"https://www.shortcoursesportal.com/disciplines/104/music.html"
     })
 }
